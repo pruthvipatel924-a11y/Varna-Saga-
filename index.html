@@ -7,17 +7,15 @@
   <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-  
-  <nav class="vs-navbar">
+
+<!-- NAVBAR -->
+<nav class="vs-navbar">
   <div class="vs-logo">Varna Saga</div>
 
   <ul class="vs-menu">
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-    
-    <!-- NAVBAR -->
-
 
   <div class="vs-toggle">
     <span></span>
@@ -26,80 +24,50 @@
   </div>
 </nav>
 
+<!-- CATEGORY GRID -->
+<section class="grid">
 
-
-
-<!-- MAIN -->
-<div class="grid">
-
-  <div class="card reveal" onclick="location.href='anime.html'">
-    <div class="image-box">
-      <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770344639/8901eae7726ac28b45ce1f2085a48d43_ps8nnm.jpg">
-    </div>
-    <p>Anime</p>
+  <div class="card" data-link="anime.html">
+    <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770344639/8901eae7726ac28b45ce1f2085a48d43_ps8nnm.jpg">
+    <h3>Anime</h3>
   </div>
 
-  <div class="card reveal" onclick="location.href='n.html'">
-    <div class="image-box">
-      <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770375035/d72008009db7e11ae594172569fd9af3_siik5q.jpg">
-    </div>
-    <p>Nature</p>
+  <div class="card" data-link="n.html">
+    <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770375035/d72008009db7e11ae594172569fd9af3_siik5q.jpg">
+    <h3>Nature</h3>
   </div>
 
-  <!-- CENTER CARD -->
-  <div class="card reveal" onclick="location.href='abstract.html'">
-    <div class="image-box">
-      <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770393581/27355d52872e62403492e05c454443b5_mthsb4.jpg">
-    </div>
-    <p>Abstract</p>
+  <div class="card center" data-link="abstract.html">
+    <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770393581/27355d52872e62403492e05c454443b5_mthsb4.jpg">
+    <h3>Abstract</h3>
   </div>
 
-  <div class="card reveal" onclick="location.href='s.html'">
-    <div class="image-box">
-      <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770434833/c01578bb-51ec-4966-8608-ad2c1a7f0c52_pse9it.jpg"> 
-    </div>
-    <p>Space</p>
+  <div class="card" data-link="s.html">
+    <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770434833/c01578bb-51ec-4966-8608-ad2c1a7f0c52_pse9it.jpg">
+    <h3>Space</h3>
   </div>
 
-  <div class="card reveal" onclick="location.href='cars.html'">
-    <div class="image-box">
-      <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770428697/b77169a3-117b-4a16-9f41-28f7222f487d_rfieia.jpg">
-    </div>
-    <p>Cars</p>
+  <div class="card" data-link="cars.html">
+    <img src="https://res.cloudinary.com/dvypkvftc/image/upload/v1770428697/b77169a3-117b-4a16-9f41-28f7222f487d_rfieia.jpg">
+    <h3>Cars</h3>
   </div>
 
-</div>
-  
-  <section class="about-section reveal">
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
   <h2>About the Creator</h2>
-
-  <p class="about-text">
-    Hi, I'm <span>Pruthvi Patel</span> — the creator of Varna Saga.  
-    I’m passionate about clean UI, animations, and building premium
-    digital experiences. Varna Saga is my vision to deliver high-quality
-    wallpapers with a smooth and modern feel.
+  <p>
+    Hi, I'm <strong>Pruthvi Patel</strong> — creator of Varna Saga.
+    Premium wallpapers with smooth experience.
   </p>
-
-  <div class="social-links">
-    <a href="https://www.instagram.com/pruthvi__281?igsh=MWNmOWNlY3FtcDk3dQ==" target="_blank">
-      Instagram
-    </a>
-
-    <a href="https://www.linkedin.com/in/pruthvi-patel-9b4648381" target="_blank">
-      LinkedIn
-    </a>
-  </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <p class="footer-author">
-    Designed by <span>Patel Pruthvi</span>
-  </p>
-  <p>© 2026 All rights reserved</p>
+  <p>© 2026 Varna Saga</p>
 </footer>
-  
-   <script src="homepage.js"></script>
-  
+
+<script src="homepage.js"></script>
 </body>
 </html>
