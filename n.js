@@ -221,7 +221,7 @@ images.forEach((img, index) => {
   image.loading = "lazy";
   
   image.addEventListener("click", () => {
-  window.open(img, "_blank");
+  window.open(optimizeCloudinary(img, 1080), "_blank");
 });
 
   image.addEventListener("load", () => {
