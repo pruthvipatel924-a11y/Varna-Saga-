@@ -1,14 +1,19 @@
 // Card Click Navigation
 document.querySelectorAll(".card").forEach(card=>{
   card.addEventListener("click",()=>{
-    window.location.href = card.dataset.link;
+    const link = card.dataset.link;
+    if(link){
+      window.location.href = link;
+    }
   });
 });
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle (SAFE)
 const toggle = document.querySelector(".vs-toggle");
 const menu = document.querySelector(".vs-menu");
 
-toggle.addEventListener("click",()=>{
-  menu.classList.toggle("active");
-});
+if(toggle && menu){
+  toggle.addEventListener("click",()=>{
+    menu.classList.toggle("active");
+  });
+}
