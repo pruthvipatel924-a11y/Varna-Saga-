@@ -243,6 +243,14 @@ images.forEach((img, index) => {
 
   const a = document.createElement("a");
   a.href = downloadUrl;
+  a.setAttribute("download", "");
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+
+  const a = document.createElement("a");
+  a.href = downloadUrl;
   a.target = "_blank";
   document.body.appendChild(a);
   a.click();
