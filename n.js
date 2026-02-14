@@ -234,14 +234,20 @@ images.forEach((img, index) => {
   btn.innerHTML = "⤓";
 
   btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const a = document.createElement("a");
-    a.href = optimizeCloudinary(img, 1200);
-    a.download = `nature-${index+1}.jpg`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
+  e.stopPropagation();
+
+  const downloadUrl = img.replace(
+    "/upload/",
+    "/upload/fl_attachment/"
+  );
+
+  const a = document.createElement("a");
+  a.href = downloadUrl;
+  a.target = "_blank";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
 
   card.appendChild(image);
   card.appendChild(btn);
